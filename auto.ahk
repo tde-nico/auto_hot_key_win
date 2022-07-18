@@ -18,7 +18,7 @@ return
 Run, temp_clean.bat
 return
 
-!r:: ; reboot the PC
+!b:: ; reboot the PC
 Run, % A_ComSpec /c "shutdown /r -t 0"
 return
 
