@@ -18,6 +18,10 @@ return
 Run, temp_clean.bat
 return
 
+!u::
+Run, pip_upgrader.py
+return
+
 !b:: ; reboot the PC
 Run, % A_ComSpec /c "shutdown /r -t 0"
 return
@@ -30,7 +34,7 @@ return
 Send, {F4}{Esc}cmd{ENTER}	; from the window's file explorer it lounches the cmd into the current folder
 return
 
-#Enter::
+!t::
 Run, cmd.exe
 WinActivate, C:\windows\SYSTEM32\cmd.exe
 WinWaitActive, C:\windows\SYSTEM32\cmd.exe
