@@ -4,6 +4,10 @@ SetWorkingDir, %A_ScriptDir%
 
 ; ^ = CTRL, # = WIN, ! = ALT, + = Shift
 
+^!f::
+Run *RunAs "C:\Program Files\Git\bin\sh.exe" -c "bash port.sh"
+return
+
 ^+q::ExitApp
 
 ^+p:: ; show the IPv4
@@ -11,7 +15,7 @@ Run, cmd.exe /k "ipconfig | find "IPv4""
 return
 
 ^+w:: ; show the wifi passwords
-Run, wifi_password_reader.py
+Run, py wifi_password_reader.py
 return
 
 ^+x:: ; clean the temp folder
@@ -19,7 +23,7 @@ Run, temp_clean.bat
 return
 
 !u::
-Run, pip_upgrader.py
+Run, py pip_upgrader.py
 return
 
 !b:: ; reboot the PC
