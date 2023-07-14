@@ -39,10 +39,9 @@ Send, {F4}{Esc}cmd{ENTER}	; from the window's file explorer it lounches the cmd 
 return
 
 !t::
-Run, cmd.exe
-WinActivate, C:\windows\SYSTEM32\cmd.exe
-WinWaitActive, C:\windows\SYSTEM32\cmd.exe
-Send, ubuntu{ENTER}desk{ENTER}c{ENTER}	; desk -> alias for "cd Desktop", c -> alias for "clear"
+Run, wt
+;WinActivate, Ubuntu
+;WinWaitActive, Ubuntu
 return
 
 ^+m::
