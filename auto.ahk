@@ -44,10 +44,7 @@ Run, wt
 ;WinWaitActive, Ubuntu
 return
 
-^+m::
-Send, c{ENTER}m{Enter}	; c -> alias for "clear", m -> alias for "make"
+!w::
+Run, wsl --shutdown
 return
 
-^+r::
-Send, c{ENTER}r{Enter}	; c -> alias for "clear", r -> alias for "make run"
-return
