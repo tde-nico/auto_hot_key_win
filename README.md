@@ -2,6 +2,7 @@
 
 <!--
 #groups
+Tools
 
 #languages
 Auto_Hot_Key
