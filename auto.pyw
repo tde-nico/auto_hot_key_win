@@ -8,6 +8,6 @@ def log(text):
 
 
 try:
-	subprocess.Popen("C:/Python/auto/auto.ahk", shell=True)
+	subprocess.Popen("C:/Programming/auto/auto2.exe", shell=True)
 except Exception as e:
 	log(str(e))
