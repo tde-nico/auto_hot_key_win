@@ -17,13 +17,10 @@ SetWorkingDir(A_ScriptDir)
 	Run("py pip_upgrader.py")
 }
 
-<<<<<<< HEAD
 !f:: {
 	Run("port_forwarder.exe 172.29.54.192")
 }
 
-=======
->>>>>>> 1e75965a28d31cb9dd6efaf8124329496f26dff0
 !b:: { ; reboot the PC
 	Run("shutdown /r -t 0")
 }
